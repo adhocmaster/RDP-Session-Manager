@@ -14,9 +14,10 @@ namespace SharePc
              Console.WriteLine("hello");
 
              SharePC pc = new SharePC();
-             pc.shareControl();
+             //pc.shareControl();
+             pc.shareView();
 
-             String temp = pc.getInvitationString();
+             String temp = pc.getInvitationString(16); //the max no of client 
              Console.WriteLine("in main: \n"+temp);
 
              String a = Console.ReadLine();

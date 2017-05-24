@@ -120,13 +120,22 @@ namespace SharePc
             connectWithView();//currentSession);
         }
 
-        public String getInvitationString(int clientLimit)
+        public String getUnprotectedInvitationString(int clientLimit)
         {
             String invitationString = connectionString(currentSession, "Test", "Group", "", clientLimit);
             Console.WriteLine("the invitation string: \n" + invitationString);
 
             return invitationString;
         
+        }
+
+        public String getProtectedInvitationString(int clientLimit,String password)
+        {
+            String invitationString = connectionString(currentSession, "Test", "Group", password, clientLimit);
+            Console.WriteLine("the invitation string: \n" + invitationString);
+
+            return invitationString;
+
         }
 
         public int getControlClientNumber()

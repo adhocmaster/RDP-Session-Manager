@@ -9,3 +9,4 @@ C:\Users\Acer\Documents\Visual Studio 2013\Projects\Project3\Project3\obj\Debug\
 C:\Users\Acer\Documents\Visual Studio 2013\Projects\Project3\Project3\obj\Debug\Project3.application
 C:\Users\Acer\Documents\Visual Studio 2013\Projects\Project3\Project3\obj\Debug\Project3.exe
 C:\Users\Acer\Documents\Visual Studio 2013\Projects\Project3\Project3\obj\Debug\Project3.pdb
+C:\Users\Acer\Documents\Visual Studio 2013\Projects\Project3\Project3\obj\Debug\SharePc.csprojResolveAssemblyReference.cache

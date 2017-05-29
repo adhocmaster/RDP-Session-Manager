@@ -136,7 +136,7 @@ namespace SharePc
 
 
 
-        internal string getInvitationString( int clientLimit ) {
+        public string getInvitationString( int clientLimit ) {
             
             return getUnprotectedInvitationString( clientLimit );
 

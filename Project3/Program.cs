@@ -22,8 +22,11 @@ namespace SharePc
              String viewInvitation = pc1.getInvitationString(16); //the max no of client 
              Console.WriteLine("for view:\n"+viewInvitation);
 
-             pc2.shareControl();
-             String controlInvitation = pc2.getInvitationString(16);
+             String temp = pc.getInvitationString( 16 ); //the max no of client  similar to getUnprotectedInvitationString
+             Console.WriteLine( "in main: \n" + temp ); 
+
+             pc.shareControl();
+             String controlInvitation = pc.getUnprotectedInvitationString(16);
              Console.WriteLine("for control:\n"+controlInvitation);
              String a = Console.ReadLine();
              

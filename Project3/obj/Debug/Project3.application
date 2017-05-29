@@ -15,10 +15,14 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
 <<<<<<< HEAD
+        <dsig:DigestValue>1E+E/ln4T5Kn7enUusKopBTja6vll9BWkfWDmzwQl74=</dsig:DigestValue>
+=======
+<<<<<<< HEAD
         <dsig:DigestValue>BwVRpi9WysQopKtM4D5MYDzfJLXU+LS09Gp8uYMFkKw=</dsig:DigestValue>
 =======
         <dsig:DigestValue>WzaM/5KOi/TCGgISE44hCx+W+BWhwRhLmnrpGdsqcaY=</dsig:DigestValue>
 >>>>>>> master
+>>>>>>> muktadir
       </hash>
     </dependentAssembly>
   </dependency>

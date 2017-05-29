@@ -50,10 +50,14 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
 <<<<<<< HEAD
+        <dsig:DigestValue>I/b/7o5cf8erqLZIP0TQCwncb1o51vKYRcQhPPjvlK0=</dsig:DigestValue>
+=======
+<<<<<<< HEAD
         <dsig:DigestValue>olkPdL7lnsZIqneac7cSx05vwGev2qPvlMHXQg/I6Ew=</dsig:DigestValue>
 =======
         <dsig:DigestValue>aZ9RB9mRKPjLeXi/biaGZaG1OlMnWoPTOvZPdJjVQ5o=</dsig:DigestValue>
 >>>>>>> master
+>>>>>>> muktadir
       </hash>
     </dependentAssembly>
   </dependency>

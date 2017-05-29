@@ -14,6 +14,7 @@ E:\projects\wpf\RDP-Server\Project3\bin\Debug\Project3.exe.manifest
 E:\projects\wpf\RDP-Server\Project3\bin\Debug\Project3.application
 E:\projects\wpf\RDP-Server\Project3\bin\Debug\Project3.exe
 E:\projects\wpf\RDP-Server\Project3\bin\Debug\Project3.pdb
+E:\projects\wpf\RDP-Server\Project3\obj\Debug\SharePc.csprojResolveAssemblyReference.cache
 E:\projects\wpf\RDP-Server\Project3\obj\Debug\Interop.RDPCOMAPILib.dll
 E:\projects\wpf\RDP-Server\Project3\obj\Debug\SharePc.csproj.ResolveComReference.cache
 E:\projects\wpf\RDP-Server\Project3\obj\Debug\Project3.exe.manifest

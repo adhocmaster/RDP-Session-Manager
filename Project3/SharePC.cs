@@ -8,16 +8,21 @@ using RDPCOMAPILib;
 
 namespace SharePc
 {
-    class SharePC
+    public class SharePC
     {
         public static RDPSession currentSession = null;
+        public static object _lock = new object();
         
         private static int countControlClient=0;
         private static int countViewClient = 0;        
 
         public static void createSession()
         {
-            currentSession = new RDPSession();
+            lock ( _lock ) {
+                
+                if ( null == currentSession )
+                    currentSession = new RDPSession();
+            }
         }
 
 
@@ -31,7 +36,8 @@ namespace SharePc
                 currentSession.Open();
             }
             catch(Exception e) {
-                Console.WriteLine("the error is in opening connection: "+e);            
+                Console.WriteLine("the error is in opening connection: "+e);
+                throw e;
             }
 
             //session.Open();
@@ -50,6 +56,7 @@ namespace SharePc
             catch (Exception e)
             {
                 Console.WriteLine("the error is in opening connection: " + e);
+                throw e;
 
             }
 
@@ -70,6 +77,7 @@ namespace SharePc
             {
                // MessageBox.Show("Error Connecting", "Error connecting to remote desktop " + " Error:  " + Ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Console.WriteLine("error disconnecting"+Ex);
+                throw Ex;
             }
 
         }
@@ -106,6 +114,9 @@ namespace SharePc
 
         }
 
+        /// <summary>
+        /// throws exception
+        /// </summary>
         public void shareControl()
         {
             createSession();
@@ -114,6 +125,9 @@ namespace SharePc
 
         }
 
+        /// <summary>
+        /// throws exception
+        /// </summary>
         public void shareView()
         {
             createSession();

@@ -1,9 +1,0 @@
-c:\users\acer\documents\visual studio 2013\Projects\Project3\Project3\bin\Debug\Project3.exe.config
-c:\users\acer\documents\visual studio 2013\Projects\Project3\Project3\obj\Debug\Project3.csprojResolveAssemblyReference.cache
-c:\users\acer\documents\visual studio 2013\Projects\Project3\Project3\bin\Debug\Project3.exe
-c:\users\acer\documents\visual studio 2013\Projects\Project3\Project3\bin\Debug\Project3.pdb
-c:\users\acer\documents\visual studio 2013\Projects\Project3\Project3\obj\Debug\Project3.exe
-c:\users\acer\documents\visual studio 2013\Projects\Project3\Project3\obj\Debug\Project3.pdb
-c:\users\acer\documents\visual studio 2013\Projects\Project3\Project3\obj\Debug\Interop.MSTSCLib.dll
-c:\users\acer\documents\visual studio 2013\Projects\Project3\Project3\obj\Debug\Interop.RDPCOMAPILib.dll
-c:\users\acer\documents\visual studio 2013\Projects\Project3\Project3\obj\Debug\Project3.csproj.ResolveComReference.cache

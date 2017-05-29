@@ -134,6 +134,13 @@ namespace SharePc
             connectWithView();//currentSession);
         }
 
+
+
+        internal string getInvitationString( int clientLimit ) {
+            
+            return getUnprotectedInvitationString( clientLimit );
+
+        }
         public String getUnprotectedInvitationString(int clientLimit)
         {
             String invitationString = connectionString(currentSession, "Test", "Group", "", clientLimit);
@@ -161,7 +168,6 @@ namespace SharePc
         {
             return countViewClient;
         }
-
 
 
     }

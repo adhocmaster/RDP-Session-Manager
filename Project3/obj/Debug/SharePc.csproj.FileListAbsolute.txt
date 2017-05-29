@@ -1,27 +1,12 @@
 C:\Users\Acer\Documents\Visual Studio 2013\Projects\Project3\Project3\bin\Debug\Project3.exe.config
+C:\Users\Acer\Documents\Visual Studio 2013\Projects\Project3\Project3\obj\Debug\Interop.RDPCOMAPILib.dll
+C:\Users\Acer\Documents\Visual Studio 2013\Projects\Project3\Project3\obj\Debug\SharePc.csproj.ResolveComReference.cache
 C:\Users\Acer\Documents\Visual Studio 2013\Projects\Project3\Project3\bin\Debug\Project3.exe.manifest
 C:\Users\Acer\Documents\Visual Studio 2013\Projects\Project3\Project3\bin\Debug\Project3.application
 C:\Users\Acer\Documents\Visual Studio 2013\Projects\Project3\Project3\bin\Debug\Project3.exe
 C:\Users\Acer\Documents\Visual Studio 2013\Projects\Project3\Project3\bin\Debug\Project3.pdb
-C:\Users\Acer\Documents\Visual Studio 2013\Projects\Project3\Project3\obj\Debug\Interop.RDPCOMAPILib.dll
-C:\Users\Acer\Documents\Visual Studio 2013\Projects\Project3\Project3\obj\Debug\SharePc.csproj.ResolveComReference.cache
+C:\Users\Acer\Documents\Visual Studio 2013\Projects\Project3\Project3\obj\Debug\SharePc.csprojResolveAssemblyReference.cache
 C:\Users\Acer\Documents\Visual Studio 2013\Projects\Project3\Project3\obj\Debug\Project3.exe.manifest
 C:\Users\Acer\Documents\Visual Studio 2013\Projects\Project3\Project3\obj\Debug\Project3.application
 C:\Users\Acer\Documents\Visual Studio 2013\Projects\Project3\Project3\obj\Debug\Project3.exe
 C:\Users\Acer\Documents\Visual Studio 2013\Projects\Project3\Project3\obj\Debug\Project3.pdb
-<<<<<<< HEAD
-E:\projects\wpf\RDP-Server\Project3\bin\Debug\Project3.exe.config
-E:\projects\wpf\RDP-Server\Project3\bin\Debug\Project3.exe.manifest
-E:\projects\wpf\RDP-Server\Project3\bin\Debug\Project3.application
-E:\projects\wpf\RDP-Server\Project3\bin\Debug\Project3.exe
-E:\projects\wpf\RDP-Server\Project3\bin\Debug\Project3.pdb
-E:\projects\wpf\RDP-Server\Project3\obj\Debug\SharePc.csprojResolveAssemblyReference.cache
-E:\projects\wpf\RDP-Server\Project3\obj\Debug\Interop.RDPCOMAPILib.dll
-E:\projects\wpf\RDP-Server\Project3\obj\Debug\SharePc.csproj.ResolveComReference.cache
-E:\projects\wpf\RDP-Server\Project3\obj\Debug\Project3.exe.manifest
-E:\projects\wpf\RDP-Server\Project3\obj\Debug\Project3.application
-E:\projects\wpf\RDP-Server\Project3\obj\Debug\Project3.exe
-E:\projects\wpf\RDP-Server\Project3\obj\Debug\Project3.pdb
-=======
-C:\Users\Acer\Documents\Visual Studio 2013\Projects\Project3\Project3\obj\Debug\SharePc.csprojResolveAssemblyReference.cache
->>>>>>> master

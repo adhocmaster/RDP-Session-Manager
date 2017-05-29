@@ -138,11 +138,13 @@ namespace SharePc
 
         internal string getInvitationString( int clientLimit ) {
             
-            return getUnprotectedInvitationString( clientLimit );
+            return getUnprotectedInvitationString(clientLimit);
 
         }
         public String getUnprotectedInvitationString(int clientLimit)
         {
+            Console.WriteLine("the invitation string is being generated: \n" );
+
             String invitationString = connectionString(currentSession, "Test", "Group", "", clientLimit);
             Console.WriteLine("the invitation string: \n" + invitationString);
 

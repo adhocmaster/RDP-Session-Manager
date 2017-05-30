@@ -1,4 +1,3 @@
-C:\Users\Acer\Documents\Visual Studio 2013\Projects\Project3\Project3\bin\Debug\Project3.exe.config
 C:\Users\Acer\Documents\Visual Studio 2013\Projects\Project3\Project3\obj\Debug\Interop.RDPCOMAPILib.dll
 C:\Users\Acer\Documents\Visual Studio 2013\Projects\Project3\Project3\obj\Debug\SharePc.csproj.ResolveComReference.cache
 C:\Users\Acer\Documents\Visual Studio 2013\Projects\Project3\Project3\bin\Debug\Project3.exe.manifest

@@ -16,6 +16,7 @@ namespace SharePc
         private static int countControlClient=0;
         private static int countViewClient = 0;        
 
+
         public static void createSession()
         {
             lock ( _lock ) {
@@ -23,6 +24,8 @@ namespace SharePc
                 if ( null == currentSession )
                     currentSession = new RDPSession();
             }
+
+
         }
 
 
@@ -69,6 +72,7 @@ namespace SharePc
             try
             {
                 currentSession.Close();
+                currentSession = null;
 
                 countControlClient = 0;
                 countViewClient = 0;
@@ -82,12 +86,13 @@ namespace SharePc
 
         }
 
-        
-        private string connectionString(RDPSession session, String authString,string group, string password, int clientLimit)
+
+        private string connectionString(RDPSession session, String authString, string group, string password, int clientLimit)
         {
-            IRDPSRAPIInvitation invitation = session.Invitations.CreateInvitation (authString, group, password, clientLimit);
+            IRDPSRAPIInvitation invitation = session.Invitations.CreateInvitation(authString, group, password, clientLimit);
             return invitation.ConnectionString;
         }
+
 
         private static void incomingControl(object Guest)
         {
@@ -136,9 +141,10 @@ namespace SharePc
 
 
 
-        internal string getInvitationString( int clientLimit ) {
-            
-            return getUnprotectedInvitationString(clientLimit);
+        public string getInvitationString( int clientLimit ) {
+
+            String invitation = getUnprotectedInvitationString(clientLimit);
+            return invitation;
 
         }
         public String getUnprotectedInvitationString(int clientLimit)

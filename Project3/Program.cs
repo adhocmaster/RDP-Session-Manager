@@ -15,18 +15,18 @@ namespace SharePc
 
              SharePC pc1 = new SharePC();
 
-             SharePC pc = new SharePC();
+             //SharePC pc = new SharePC();
              //pc.shareControl();
              
              
+             pc1.shareControl();
+             String viewInvitation = pc1.getInvitationString(5); //the max no of client 
+             Console.WriteLine("for control:\n"+viewInvitation);
+
+             pc1.disconnect();
+             
              pc1.shareView();
-             String viewInvitation = pc1.getInvitationString(16); //the max no of client 
-             Console.WriteLine("for view:\n"+viewInvitation);
-             
-            
-             
-             pc.shareControl();
-             String controlInvitation = pc.getUnprotectedInvitationString(16);
+             String controlInvitation = pc1.getUnprotectedInvitationString((int)2);
              Console.WriteLine("for control:\n"+controlInvitation);
              
              String a = Console.ReadLine();

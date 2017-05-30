@@ -15,8 +15,6 @@ namespace SharePc
 
              SharePC pc1 = new SharePC();
 
-             //SharePC pc = new SharePC();
-             //pc.shareControl();
              
              
              pc1.shareControl();

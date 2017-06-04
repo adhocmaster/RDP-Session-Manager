@@ -7,15 +7,12 @@ using System.Threading.Tasks;
 namespace SharePc
 {
      class Program
-    {
-       
+    {       
          static void Main()
          {
              Console.WriteLine("hello");
 
-             SharePC pc1 = new SharePC();
-
-             
+             SharePC pc1 = new SharePC();             
              
              pc1.shareControl();
              String viewInvitation = pc1.getInvitationString(5); //the max no of client 

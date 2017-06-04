@@ -33,7 +33,9 @@ namespace SharePc
         private static void connectWithControl()//RDPSession session)
         {
             Console.WriteLine("connecting control");
+
             currentSession.OnAttendeeConnected += incomingControl;
+            currentSession.OnAttendeeDisconnected += outgoingControl;
 
             try
             {
@@ -51,7 +53,9 @@ namespace SharePc
         private static void connectWithView()//RDPSession session)
         {
             Console.WriteLine("connecting View");
+            
             currentSession.OnAttendeeConnected += incomingView;
+            currentSession.OnAttendeeDisconnected += outgoingView;
 
             try
             {
@@ -104,10 +108,18 @@ namespace SharePc
             IRDPSRAPIAttendee MyGuest = (IRDPSRAPIAttendee)Guest;
             MyGuest.ControlLevel = CTRL_LEVEL.CTRL_LEVEL_INTERACTIVE;
 
-            Console.WriteLine("connected with control: "+ countControlClient);
+            Console.WriteLine("connected with control: " + countControlClient);
 
         }
 
+        private static void outgoingControl(object Guest)
+        {
+            countControlClient--;
+
+            Console.WriteLine("connected with control: " + countControlClient);
+
+
+        }
         
 
         private static void incomingView(object Guest)
@@ -117,7 +129,16 @@ namespace SharePc
             IRDPSRAPIAttendee MyGuest = (IRDPSRAPIAttendee)Guest;
             MyGuest.ControlLevel = CTRL_LEVEL.CTRL_LEVEL_VIEW;
 
-            Console.WriteLine("connected with view: " + countControlClient);
+            Console.WriteLine("connected with view: " + countViewClient);
+
+
+        }
+
+        private static void outgoingView(object Guest)
+        {
+            countViewClient--;
+
+            Console.WriteLine("connected with view: " + countViewClient);
 
 
         }

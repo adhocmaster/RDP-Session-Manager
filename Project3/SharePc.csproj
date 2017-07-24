@@ -60,7 +60,6 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="SharePc_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
@@ -69,17 +68,6 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
-  </ItemGroup>
-  <ItemGroup>
-    <COMReference Include="RDPCOMAPILib">
-      <Guid>{CC802D05-AE07-4C15-B496-DB9D22AA0A84}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>tlbimp</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </COMReference>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
@@ -97,6 +85,17 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="RDPCOMAPILib">
+      <Guid>{CC802D05-AE07-4C15-B496-DB9D22AA0A84}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

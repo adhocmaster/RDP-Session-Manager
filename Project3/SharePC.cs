@@ -152,7 +152,7 @@ namespace SharePc
                 {
                     createSession();
                     connectWithControl();//currentSession);
-                    flag = 1;
+                     flag = 1;
                 }
                 else
                 {

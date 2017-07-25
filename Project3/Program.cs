@@ -21,11 +21,12 @@ namespace SharePc
              pc1.disconnect();
              
              pc1.shareControl();
-             String controlInvitation = pc1.getUnprotectedInvitationString((int)2);
+             String controlInvitation = pc1.getInvitationString( ( int ) 2 );
              Console.WriteLine("for control:\n"+controlInvitation);
              
              String a = Console.ReadLine();
-             
+
+             System.Diagnostics.Debug.Print( controlInvitation );
 
              
          }

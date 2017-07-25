@@ -140,7 +140,6 @@ namespace SharePc
 
                     if ( null == currentSession )
                         return;
-
                     ReleaseEventHandlers();
                     currentSession.Close();
                     currentSession = null;

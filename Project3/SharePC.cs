@@ -159,6 +159,9 @@ namespace SharePc
                     throw new SessionExistsException();//"Without disconnecting,you can not create another one");
                     //throw new Exception("There is already a session.Without disconnecting it,you can not create another one");
                 }
+
+
+
             
             
         }

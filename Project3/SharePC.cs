@@ -10,14 +10,15 @@ namespace SharePc
 {
     public class SharePC
     {
-        public static RDPSession currentSession = null;
+        public static  RDPSession currentSession = null;
         public static object _lock = new object();
         
         private static int countControlClient=0;
-        private static int countViewClient = 0;        
+        private static int countViewClient = 0;
 
+        private int flag = 0;
 
-        public static void createSession()
+        public void createSession()  //made it non-static
         {
             lock ( _lock ) {
                 
@@ -32,7 +33,9 @@ namespace SharePc
         private static void connectWithControl()//RDPSession session)
         {
             Console.WriteLine("connecting control");
+
             currentSession.OnAttendeeConnected += incomingControl;
+            currentSession.OnAttendeeDisconnected += outgoingControl;
 
             try
             {
@@ -50,7 +53,9 @@ namespace SharePc
         private static void connectWithView()//RDPSession session)
         {
             Console.WriteLine("connecting View");
+            
             currentSession.OnAttendeeConnected += incomingView;
+            currentSession.OnAttendeeDisconnected += outgoingView;
 
             try
             {
@@ -73,6 +78,8 @@ namespace SharePc
             {
                 currentSession.Close();
                 currentSession = null;
+
+                flag = 0;
 
                 countControlClient = 0;
                 countViewClient = 0;
@@ -101,10 +108,18 @@ namespace SharePc
             IRDPSRAPIAttendee MyGuest = (IRDPSRAPIAttendee)Guest;
             MyGuest.ControlLevel = CTRL_LEVEL.CTRL_LEVEL_INTERACTIVE;
 
-            Console.WriteLine("connected with control: "+ countControlClient);
+            Console.WriteLine("connected with control: " + countControlClient);
 
         }
 
+        private static void outgoingControl(object Guest)
+        {
+            countControlClient--;
+
+            Console.WriteLine("connected with control: " + countControlClient);
+
+
+        }
         
 
         private static void incomingView(object Guest)
@@ -114,7 +129,16 @@ namespace SharePc
             IRDPSRAPIAttendee MyGuest = (IRDPSRAPIAttendee)Guest;
             MyGuest.ControlLevel = CTRL_LEVEL.CTRL_LEVEL_VIEW;
 
-            Console.WriteLine("connected with view: " + countControlClient);
+            Console.WriteLine("connected with view: " + countViewClient);
+
+
+        }
+
+        private static void outgoingView(object Guest)
+        {
+            countViewClient--;
+
+            Console.WriteLine("connected with view: " + countViewClient);
 
 
         }
@@ -124,10 +148,19 @@ namespace SharePc
         /// </summary>
         public void shareControl()
         {
-            createSession();
-            connectWithControl();//currentSession);
-           
-
+                if (flag == 0)
+                {
+                    createSession();
+                    connectWithControl();//currentSession);
+                    flag = 1;
+                }
+                else
+                {
+                    throw new SessionExistsException();//"Without disconnecting,you can not create another one");
+                    //throw new Exception("There is already a session.Without disconnecting it,you can not create another one");
+                }
+            
+            
         }
 
         /// <summary>
@@ -135,8 +168,16 @@ namespace SharePc
         /// </summary>
         public void shareView()
         {
-            createSession();
-            connectWithView();//currentSession);
+            if (flag == 0)
+            {
+                createSession();
+                connectWithView();//currentSession);
+                flag = 1;
+            }
+            else
+            {
+                throw new SessionExistsException();//"There is already a session.Without disconnecting it,you can not create another one");
+            }
         }
 
 
@@ -179,4 +220,23 @@ namespace SharePc
 
 
     }
+
+    class SessionExistsException : ApplicationException
+    {
+        public SessionExistsException():base("Without disconnecting,you can not create another one")
+        {
+            String exceptionMessage1 = "EXCEPTION:You are trying to open more than one connection without closing the previous one";
+            String exceptionMessage2 = "Disconnect the previous connection then try again";
+
+            
+        }
+        public SessionExistsException(String msg): base(msg)
+        {
+            String exceptionMessage1 = "EXCEPTION:You are trying to open more than one connection without closing the previous one";
+            String exceptionMessage2 = "Disconnect the previous connection then try again";
+            
+        }
+        
+    }
+
 }

@@ -20,7 +20,7 @@ namespace SharePc
 
              pc1.disconnect();
              
-             pc1.shareView();
+             pc1.shareControl();
              String controlInvitation = pc1.getUnprotectedInvitationString((int)2);
              Console.WriteLine("for control:\n"+controlInvitation);
              

@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
+    <Compile Include="SessionExistsException.cs" />
     <Compile Include="SharePC.cs" />
   </ItemGroup>
   <ItemGroup>

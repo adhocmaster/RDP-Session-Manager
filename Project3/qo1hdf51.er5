@@ -97,7 +97,7 @@ namespace SharePc
 
                     currentSession.Pause();
 
-                    //controlString = null;
+                    controlString = null;
 
                     //currentSession.Close();
                     //currentSession = null;

@@ -7,17 +7,12 @@ using System.Threading.Tasks;
 namespace SharePc
 {
      class Program
-    {
-       
+    {       
          static void Main()
          {
              Console.WriteLine("hello");
 
-             SharePC pc1 = new SharePC();
-
-             //SharePC pc = new SharePC();
-             //pc.shareControl();
-             
+             SharePC pc1 = new SharePC();             
              
              pc1.shareControl();
              String viewInvitation = pc1.getInvitationString(5); //the max no of client 
@@ -25,7 +20,7 @@ namespace SharePc
 
              pc1.disconnect();
              
-             pc1.shareView();
+             pc1.shareControl();
              String controlInvitation = pc1.getUnprotectedInvitationString((int)2);
              Console.WriteLine("for control:\n"+controlInvitation);
              

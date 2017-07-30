@@ -1,0 +1,25 @@
+C:\Users\Acer\Desktop\Project3\Project3\obj\Debug\Interop.RDPCOMAPILib.dll
+C:\Users\Acer\Desktop\Project3\Project3\obj\Debug\RDPSessionManager.csproj.ResolveComReference.cache
+C:\Users\Acer\Desktop\Project3\Project3\bin\Debug\RDPSessionManager.exe.manifest
+C:\Users\Acer\Desktop\Project3\Project3\bin\Debug\RDPSessionManager.application
+C:\Users\Acer\Desktop\Project3\Project3\bin\Debug\RDPSessionManager.exe
+C:\Users\Acer\Desktop\Project3\Project3\bin\Debug\RDPSessionManager.pdb
+C:\Users\Acer\Desktop\Project3\Project3\obj\Debug\RDPSessionManager.exe.manifest
+C:\Users\Acer\Desktop\Project3\Project3\obj\Debug\RDPSessionManager.application
+C:\Users\Acer\Desktop\Project3\Project3\obj\Debug\RDPSessionManager.exe
+C:\Users\Acer\Desktop\Project3\Project3\obj\Debug\RDPSessionManager.pdb
+C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\Project3\Project3\Project3\obj\Debug\Interop.RDPCOMAPILib.dll
+C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\Project3\Project3\Project3\obj\Debug\RDPSessionManager.csproj.ResolveComReference.cache
+C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\Project3\Project3\Project3\obj\Debug\RDPSessionManager.exe
+C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\Project3\Project3\Project3\obj\Debug\RDPSessionManager.pdb
+C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\Project3\RDPSessionManager\Project3\obj\Debug\Interop.RDPCOMAPILib.dll
+C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\Project3\RDPSessionManager\Project3\obj\Debug\RDPSessionManager.csproj.ResolveComReference.cache
+C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\Project3\RDPSessionManager\Project3\obj\Debug\RDPSessionManager.exe
+C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\Project3\RDPSessionManager\Project3\obj\Debug\RDPSessionManager.pdb
+C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\Project3\RDPSessionManager\Project3\bin\Debug\RDPSessionManager.exe.manifest
+C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\Project3\RDPSessionManager\Project3\bin\Debug\RDPSessionManager.application
+C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\Project3\RDPSessionManager\Project3\bin\Debug\RDPSessionManager.exe
+C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\Project3\RDPSessionManager\Project3\bin\Debug\RDPSessionManager.pdb
+C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\Project3\RDPSessionManager\Project3\obj\Debug\RDPSessionManager.csprojResolveAssemblyReference.cache
+C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\Project3\RDPSessionManager\Project3\obj\Debug\RDPSessionManager.exe.manifest
+C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\Project3\RDPSessionManager\Project3\obj\Debug\RDPSessionManager.application

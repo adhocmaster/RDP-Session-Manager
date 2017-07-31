@@ -170,9 +170,11 @@ namespace RDPSessionManager
         {
             countControlClient++;
 
-            IRDPSRAPIAttendee MyGuest = (IRDPSRAPIAttendee)Guest;
+            IRDPSRAPIAttendee MyGuest = ( IRDPSRAPIAttendee ) Guest;
             MyGuest.ControlLevel = CTRL_LEVEL.CTRL_LEVEL_INTERACTIVE;
 
+
+            /*
             CResolution res1 = new CResolution();
             DEVMODE1 dm1 = res1.getCurrentResolution();
             DEVMODE1 dm2 = res1.getSupportedResolutionList()[0];
@@ -181,6 +183,7 @@ namespace RDPSessionManager
             res1.setSupportedResolution(dm2);
             res1.setSupportedResolution(dm1);
             //String abn = Console.ReadLine();
+             * */
 
 
            // Console.WriteLine("connected with control: " + countControlClient);
@@ -190,6 +193,7 @@ namespace RDPSessionManager
         private static void outgoingControl(object Guest)
         {
             countControlClient--;
+
 
            // Console.WriteLine("connected with control: " + countControlClient);
 

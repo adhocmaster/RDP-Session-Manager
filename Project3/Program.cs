@@ -27,9 +27,14 @@ namespace SharePc
 
              String invitation = pc1.GetControlString();
 
+             Console.WriteLine("invitation 1:\n"+invitation);
+
              pc1.disconnect();
 
              invitation = pc1.GetControlString();
+
+
+             Console.WriteLine("invitation 2:\n" + invitation);
 
              String a = Console.ReadLine();
 
@@ -37,6 +42,7 @@ namespace SharePc
 
              pc1.destroy();
 
+             String b = Console.ReadLine();
              
          }
         
